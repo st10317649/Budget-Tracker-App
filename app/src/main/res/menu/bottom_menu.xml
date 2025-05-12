@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeMn"
+        android:title="@string/home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/expensesMn"
+        android:title="@string/expenses"
+        android:icon="@drawable/expenses"/>
+
+    <item android:id="@+id/incomesMn"
+        android:title="@string/incomes"
+        android:icon="@drawable/budget"/>
+
+    <item android:id="@+id/categoriesMn"
+        android:title="@string/categories"
+        android:icon="@drawable/categories"/>
+
+    <item android:id="@+id/settingsMn"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+
+</menu>

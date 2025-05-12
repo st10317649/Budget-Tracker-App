@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".CreateCategoriesActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createCategoriesText"
+        android:text="@string/create_categories"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/baloo"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/promptLl"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/createCategoriesText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/promptTv"
+            android:text="@string/for_a_gauranteed_exceptional_experience_with_us_enter_the_information_required_below"
+            android:fontFamily="@font/abeezee"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:background="@color/white"
+        android:layout_below="@id/promptLl"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expenseCategoriesLl"
+        android:layout_below="@id/view"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/expenseCategoriesTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/abeezee"
+        android:text="@string/create_at_least_3_expense_categories"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expenseCategoriesTil"
+
+        app:hintEnabled="false"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expenseCategoriesEt"
+            android:autofillHints=""
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/baseline_category_24"
+            android:drawableTint="@color/grey"
+            android:drawablePadding="10dp"
+            android:hint="@string/category_name"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expenseButtons"
+            android:orientation="horizontal">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addExpenseButton"
+                android:layout_marginTop="20dp"
+                android:text="@string/add"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/shape_button"
+                android:textColor="@color/yellow" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/budgetCategoriesLl"
+        android:layout_below="@id/expenseCategoriesLl"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/budgetCategoriesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/abeezee"
+            android:text="@string/create_at_least_3_budget_categories"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/budgetCategoriesTil"
+
+            app:hintEnabled="false"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/budgetCategoriesEt"
+                android:autofillHints=""
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/baseline_category_24"
+                android:drawableTint="@color/grey"
+                android:drawablePadding="10dp"
+                android:hint="@string/category_name"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/budgetButtons"
+            android:orientation="horizontal">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addBudgetButton"
+                android:layout_marginTop="20dp"
+                android:text="@string/add"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/shape_button"
+                android:textColor="@color/yellow" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextButton"
+       android:layout_below="@id/budgetCategoriesLl"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/shape_button"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        />
+
+
+
+</RelativeLayout>
